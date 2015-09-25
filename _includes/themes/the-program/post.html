@@ -35,7 +35,7 @@
 				</div><!-- entry-content -->
 				<div class="misc-content">
 					<div class="social">
-						<ul class="list-linear">
+						<ul class="list-linear" style="display: none">
 							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
 							<li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
 						</ul>
@@ -52,11 +52,11 @@
 							{% if page.previous %}
 							<li class="prev"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a></li>
 							{% endif %}
-							{% if page.previous and page.next %}
-							<li class="pipe"> | </li>
-							{% endif %}
+<!-- 							{% if page.previous and page.next %}
+							<li class="pipe" style="margin:auto;"> | </li>
+							{% endif %} -->
 							{% if page.next %}
-							<li class="next"><a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &raquo;</a></li>
+							<li class="next" style="float:right"><a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &raquo;</a></li>
 							{% endif %}
 						</ul>
 					</nav>

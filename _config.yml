@@ -3,13 +3,14 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown    
 highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : cm_Lighters' Blog
-tagline: Life is Short
+title : Lighters' Blog
+tagline: Life is Short!
 author :
   name : Chen Ming
   email : mijechen@yeah.net
@@ -82,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : cmLighters
     livefyre :
       site_id : 123
     intensedebate :

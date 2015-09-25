@@ -25,11 +25,16 @@
 						<li class="page"><a href="/pages.html">pages</a></li>
 						<li class="category"><a href="/categories.html">categories</a></li>
 						<li class="tag"><a href="/tags.html">tags</a></li>
+<!--
 						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
 									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+-->
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
+
+			<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=5093684&auto=0&height=66" style="display:none"></iframe> -->
+
 		</div><!-- unit-head -->
 	</header>
 	<div class="body" role="main">
@@ -45,18 +50,22 @@
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
-					<h4>about</h4>
+					<h4>About</h4>
 					<ul>
-						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
+						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span></address></li>
+                        <li class="email"><a href="mailto:{{ site.author.email }}" rel="me">{{ site.author.email }}</a></li>
 						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
+						<!--<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
 						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
-					</ul>
+					</ul>-->
 				</div><!-- misc -->
-				<p class="licence">
-					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+                    
+                    <iframe width="350" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2088397332&verifier=f76ba978&dpc=1"></iframe>
+                    
+				<div class="license">
+					Theme: <a href="http://layouts-the.me">the_program</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
 					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
-				</p>
+				</div>
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
 	</footer>
@@ -79,5 +88,12 @@
 </script>
   
   {% include JB/analytics %}
+
+  <!-- include HighLight.js -->
+
+      <link rel="stylesheet" href="http://7u2k72.com1.z0.glb.clouddn.com/statics/styles/monokai_sublime.css">
+      <script src="http://7u2k72.com1.z0.glb.clouddn.com/statics/js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+
 </body>
 </html>
