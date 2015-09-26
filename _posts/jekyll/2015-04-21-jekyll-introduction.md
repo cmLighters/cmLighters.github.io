@@ -1,10 +1,11 @@
 ---
 layout: post
 category : lessons
-date: 2014-12-01
+date: 2015-04-21 15:00:00
 tagline: "Supporting tagline"
 comments: true
-tags : [intro, beginner, jekyll, tutorial]
+tags : [jekyll, tutorial]
+digest: Jekyll-bootstrap系统自动生成的文件，介绍Jekyll和如何使用，保留下来供以后对Jekyll修改时查找。
 ---
 {% include JB/setup %}
 
