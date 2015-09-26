@@ -1,6 +1,7 @@
 ---
 layout: post
 category : lessons
+date: 2014-12-01
 tagline: "Supporting tagline"
 comments: true
 tags : [intro, beginner, jekyll, tutorial]
