@@ -38,14 +38,36 @@ category: lessons
 
 Jekyll的文章(post)**分成两部分**，上半部分是博客的yaml配置选项， 下半部分是文章内容，由 Markdown 书写。
 
+### yaml配置
+由于博客系统中文章分为page（如主页上的导航等）和post（博客文章），所以yaml配置在两种文章中的配置项也不同。
+
+典型的page配置项如下：
+
+<pre><code class="markdown">
+layout: page
+title: *******      # 页面的标题 
+group: *******      # 若为导航栏中项，则值为navigation，否则无需本项设置
+permalink: ******   # 若page文章是html格式，则无需设置本项，文章URL链接为`$base/filename.html`。若page文章是markdown，文章URL地址为`$base/$permalink`
+</code></pre>
+
+典型的post配置项如下：
+<pre><code class="markdown">
+layout: post
+title: *******      # 文章标题   
+date: 2015-04-21    # 写作日期
+digest: 博客搭建过程总结, Blogging like a hacker，Jekyll构建博客系统，Markdown写作指南。  # 文章摘要。在主页中呈现
+tags: [jekyll]      # 文章的标签，放在"[]"中，如[python, tornado]等
+category: lessons   # 文章分类目录，如tornado web structure文章那个放入Web Develpment中
+</code></pre>
+
 ### Markdown
 语法简单，布局简洁，可以专注写作。 
 
 - [Markdown语法中译][MD语法]
 - [献给写作者的 Markdown 新手指南][MD 指南]
+- [Markdown：让书写更美好](http://www.jianshu.com/p/17fdcf17bbb4)
 
-推荐[平克写作八原则][pk8yz]，博客文章也非常有营养。
-
+推荐[平克写作八原则][pk8yz]，博客其他文章也非常有营养。
 
 
 

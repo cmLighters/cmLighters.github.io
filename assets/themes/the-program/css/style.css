@@ -62,13 +62,13 @@ textarea {
   font-family: sans-serif;
 }
 ::-moz-selection {
-  background: #073642;
-  color: #fff;
+  background: yellow;
+  color: red;
   text-shadow: none;
 }
 ::selection {
-  background: #073642;
-  color: #fff;
+  background: yellow;
+  color: red;
   text-shadow: none;
 }
 /*
@@ -405,7 +405,7 @@ No styleguide reference.
 */
 body {
   font-family: consolas, monaco, monospace;
-  font-size: 1em;
+  font-size: 15px;
   line-height: 1.625em;
 }
 /*
@@ -457,7 +457,7 @@ ol,
 dl,
 img {
   margin-top: 0;
-  margin-bottom: 1.625em;
+  margin-bottom: 0.75em;
 }
 small,
 .small,
@@ -548,7 +548,7 @@ No styleguide reference.
 /* GLOBAL
 --------------------------------------------------------------------------------- */
 html {
-  color: #2d2d2d;
+  color: rgb(88, 88, 88);
 }
 #page {
   background: url('/assets/themes/the-program/skin/100-90-5-monochrome.png');
@@ -727,9 +727,10 @@ pre {
 }
 .unit-article p code,
 .unit-article li code {
-  padding: 2px 5px;
+  padding: 0px 8px;
   white-space: nowrap;
   background-color: #fff04a;
+  border-radius: 8px;
 }
 .unit-article img {
   display: block;
@@ -940,7 +941,10 @@ pre {
   border: 0;
 }
 .the-footer h4 {
+  font-size: 22px;
+  line-height: 26px;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 /*
  	IE
@@ -1515,4 +1519,30 @@ p.post-meta, p.post-digest {
     font-size: 13px;
     text-align: left;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.unit-article ul, .unit-article ol {
+	padding-left: 35px;
+}
+
+.unit-article ul > ul, .unit-article ul > ol, .unit-article ol > ul, .unit-article ol > ol {
+	padding-left: 70px
+}
+
+.pagination ul, ul.list-category, ul.list-tag {
+	padding-left: 0;
+}
+
+
+/* add font icons */
+.icon-user:before {
+	content: "\e801";
+}
+
+.icon-mail-alt:before {
+	content: "\e803"
+}
+
+.iconn-github:before {
+	content: "\e807"
 }

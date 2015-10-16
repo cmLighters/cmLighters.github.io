@@ -10,6 +10,7 @@
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
+	<link rel="stylesheet" href="{{ ASSET_PATH }}/myIconFonts/css/fontello.css">
 </head>
 <body>
 
@@ -51,9 +52,9 @@
 				<div class="misc vcard">
 					<h4>About</h4>
 					<ul>
-						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span></address></li>
-                        <li class="email"><a href="mailto:{{ site.author.email }}" rel="me">{{ site.author.email }}</a></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+						<li class="contact"><address><a href="http://home.chenming.xyz"><i class="icon-user"></i>{{ site.author.name }}</a></address></li>
+						<li class="email"><a href="mailto:{{ site.author.email }}" rel="me"><i class="icon-mail-alt"></i>{{ site.author.email }}</a></li>
+						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me"><i class="icon-github"></i>github.com/{{ site.author.github }}</a></li>
 						<!--<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
 						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
 					</ul>-->
@@ -82,7 +83,9 @@
 
       <link rel="stylesheet" href="http://7u2k72.com1.z0.glb.clouddn.com/static/css/monokai_sublime.css">
       <script src="http://7u2k72.com1.z0.glb.clouddn.com/static/js/highlight.pack.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
+      <script>
+			hljs.initHighlightingOnLoad();
+	  </script>
 
 </body>
 </html>
