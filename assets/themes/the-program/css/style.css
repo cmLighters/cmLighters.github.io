@@ -728,14 +728,14 @@ pre {
 .unit-article p code,
 .unit-article li code {
   padding: 0px 8px;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   background-color: #fff04a;
   border-radius: 8px;
 }
 .unit-article img {
   display: block;
-  margin-left: auto;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 .unit-article img.left {
   margin-right: 16px;
